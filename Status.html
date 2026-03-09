@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Status - College Complaint Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Status.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i> COLLEGE COMPLAINT AND MANAGEMENT SYSTEM
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="complaintsubmission.html">Register Complaint</a>
+        <a href="Status.html">Complaint Status</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="login.html" id="nav-login">Login</a>
+        <a href="#" id="nav-logout" style="display:none;">Sign Out</a>
+    </nav>
+</header>
+
+<!-- STATUS SECTION -->
+<section class="status-section">
+    <div class="status-container">
+        <div class="status-header">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h1>Track Your Complaint Status</h1>
+            <p>Enter your complaint ID to check the current status of your complaint</p>
+        </div>
+
+        <!-- Search Form -->
+        <div class="search-card">
+            <form id="status-form">
+                <div class="form-group">
+                    <label for="complaint-id"><i class="fa-solid fa-hashtag"></i> Complaint ID</label>
+                    <input type="text" id="complaint-id" name="complaint-id" placeholder="Enter your complaint ID (e.g., COMP-2026-001)" required>
+                </div>
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-search"></i> Check Status
+                </button>
+            </form>
+        </div>
+
+        <!-- Complaint Details (Initially Hidden - shown after search) -->
+        <div class="complaint-details" id="complaint-details">
+            <div class="details-card">
+                <div class="details-header">
+                    <h2>Complaint Details</h2>
+                    <span class="status-badge resolved">Resolved</span>
+                </div>
+                
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label"><i class="fa-solid fa-hashtag"></i> Complaint ID</span>
+                        <span class="detail-value">COMP-2026-001</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label"><i class="fa-solid fa-calendar"></i> Date Submitted</span>
+                        <span class="detail-value">2026-02-20</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label"><i class="fa-solid fa-layer-group"></i> Category</span>
+                        <span class="detail-value">WiFi / Internet Issue</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label"><i class="fa-solid fa-user"></i> Submitted By</span>
+                        <span class="detail-value">John Doe</span>
+                    </div>
+                </div>
+
+                <div class="complaint-description">
+                    <h3><i class="fa-solid fa-align-left"></i> Description</h3>
+                    <p>The WiFi connection in the computer lab is very slow and keeps disconnecting frequently. Unable to complete online assignments.</p>
+                </div>
+
+                <!-- Status Timeline -->
+                <div class="status-timeline">
+                    <h3><i class="fa-solid fa-list-check"></i> Status Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Complaint Submitted</h4>
+                                <p>Your complaint has been successfully submitted.</p>
+                                <span class="timeline-date">2026-02-20 10:30 AM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Under Review</h4>
+                                <p>Admin is reviewing your complaint.</p>
+                                <span class="timeline-date">2026-02-20 02:15 PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>In Progress</h4>
+                                <p>Technical team is working on the issue.</p>
+                                <span class="timeline-date">2026-02-21 09:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check-double"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Resolved</h4>
+                                <p>WiFi issue has been fixed. New router installed.</p>
+                                <span class="timeline-date">2026-02-22 11:45 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-response">
+                    <h3><i class="fa-solid fa-reply"></i> Admin Response</h3>
+                    <div class="response-box">
+                        <p><strong>Resolved by:</strong> Technical Support Team</p>
+                        <p>We have identified the issue with the old router and replaced it with a new high-speed router. The WiFi connection should now be stable. Please let us know if you face any further issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="no-results" style="display: none;">
+            <div class="no-results-card">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <h3>No Complaint Found</h3>
+                <p>We couldn't find any complaint with the provided ID. Please check the ID and try again.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 College Complaint And Management System. All rights reserved.
+</footer>
+
+<script src="Status.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>

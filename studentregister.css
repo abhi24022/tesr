@@ -1,0 +1,118 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #3f5b7c, #4e73df);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Register Card */
+main div {
+    background: #ffffff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-top: 6px solid #3f5b7c;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    color: #2f3e4e;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd6e0;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f8fafc;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+/* Focus Effect */
+input:focus {
+    border-color: #4e73df;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(78,115,223,0.3);
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3f5b7c, #4e73df);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2c4766, #375ec9);
+    transform: translateY(-2px);
+}
+
+/* Login Link */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4e73df;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #3f5b7c;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+}

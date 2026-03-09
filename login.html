@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - College Complaint System</title>
+
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="login.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i> COLLEGE COMPLAINT AND MANAGEMENT SYSTEM
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="complaintsubmission.html">Register Complaint</a>
+        <a href="Status.html">Complaint Status</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="login.html" id="nav-login">Login</a>
+        <a href="#" id="nav-logout" style="display:none;">Sign Out</a>
+    </nav>
+</header>
+
+<section class="login-section">
+    <div class="login-card">
+        <h2>Select Login Type</h2>
+
+        <a href="studentlogin.html" class="login-btn student-btn">
+            <i class="fa-solid fa-user"></i> Student Login
+        </a>
+
+        <a href="adminlogin.html" class="login-btn admin-btn">
+            <i class="fa-solid fa-user-shield"></i> Admin Login
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 College Complaint And Management System. All rights reserved.
+</footer>
+
+<script src="auth.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', updateNav);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f7;   /* light gray background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #3f5b7c, #4e73df);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Form Card */
+form {
+    background: #ffffff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-top: 6px solid #3f5b7c;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    color: #2f3e4e;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd6e0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+/* Focus Effect */
+select:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #4e73df;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(78,115,223,0.3);
+}
+
+/* Textarea */
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3f5b7c, #4e73df);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2c4766, #375ec9);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #3f5b7c;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+}

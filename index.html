@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Complaint and Management System</title>
+<link rel="stylesheet" href="index.css">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i> COLLEGE COMPLAINT AND MANAGEMENT SYSTEM
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="complaintsubmission.html">Register Complaint</a>
+        <a href="Status.html">Complaint Status</a>
+        <a href="contactus.html">Contact Us</a>
+        <!-- login/logout links are toggled by auth.js -->
+        <a href="login.html" id="nav-login">Login</a>
+        <a href="#" id="nav-logout" style="display:none;">Sign Out</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Raise Your Voice,<br>Improve Your Campus</h1>
+        <p>A digital platform to submit and track complaints efficiently.</p>
+
+        <div class="hero-buttons">
+            <button class="green-btn">
+                <i class="fa-solid fa-pen"></i> <a href="complaintsubmission.html">Register Complaint</a>
+            </button>
+
+            <button class="blue-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> <a href="Status.html">Complaint Status</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- NEW AI STYLE GIRL IMAGE -->
+    
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+    <h2>How It Works</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <i class="fa-solid fa-file-circle-check icon"></i>
+            <h3>Submit Complaint</h3>
+            <p>Fill out the online complaint form.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-user-shield icon"></i>
+            <h3>Complaint Review by Admin</h3>
+            <p>Our team reviews and addresses your complaint.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-bell icon"></i>
+            <h3>Resolution & Notification</h3>
+            <p>Receive updates and resolution notifications.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section light">
+    <h2>Our Features</h2>
+
+    <div class="feature-container">
+        <div class="feature-card">
+            <i class="fa-solid fa-lock icon"></i>
+            <h3>Secure & Confidential</h3>
+            <p>Your complaints are safe and confidential.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-bolt icon"></i>
+            <h3>Fast Processing</h3>
+            <p>Complaints are reviewed and resolved swiftly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- LOGIN SECTION (Fixed Buttons) -->
+<section class="section">
+    <div class="login-container">
+
+        <div class="login-card">
+            <h3>Student Login</h3>
+            <p>Access your dashboard.</p>
+            <a href="studentlogin.html" class="green-btn login-btn">
+                <i class="fa-solid fa-user"></i> Student Login
+            </a>
+        </div>
+
+        <div class="login-card">
+            <h3>Admin Login</h3>
+            <p>Manage complaints efficiently.</p>
+            <a href="adminlogin.html" class="blue-btn login-btn">
+                <i class="fa-solid fa-user-shield"></i> Admin Login
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="section light">
+    <h2>Statistics</h2>
+    <div class="stats-container">
+        <div class="stat-card">
+            <i class="fa-solid fa-clipboard-check icon"></i>
+            <h3>120+</h3>
+            <p>Complaints Resolved</p>
+        </div>
+        <div class="stat-card">
+            <i class="fa-solid fa-thumbs-up icon"></i>
+            <h3>95%</h3>
+            <p>Satisfaction Rate</p>
+        </div>
+        <div class="stat-card">
+            <i class="fa-solid fa-headset icon"></i>
+            <h3>24/7</h3>
+            <p>Online Support</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 College Complaint And Management System. All rights reserved.
+</footer>
+
+<script src="auth.js"></script>
+</body>
+</html>

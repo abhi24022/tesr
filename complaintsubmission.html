@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Submission - College Complaint System</title>
+    <!-- shared navbar styles -->
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="complaintsubmission.css"/>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i> COLLEGE COMPLAINT AND MANAGEMENT SYSTEM
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="complaintsubmission.html">Register Complaint</a>
+            <a href="Status.html">Complaint Status</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="login.html" id="nav-login">Login</a>
+            <a href="#" id="nav-logout" style="display:none;">Sign Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="complaint-form">
+            <label for="complaint-category">Select Category :</label>
+            <select name="category" id="complaint-category" required>
+                <option value="">--Select Category--</option>
+                <option value="Exam">Exam & Result Issue</option>
+                <option value="Attendance">Attendance Issue</option>
+                <option value="Assignment/Internal Marks">Assignment / Internal Marks Issue</option>
+                <option value="Classroom Problem">Classroom Problem (Fan, Light, Bench)</option>
+                <option value="Washroom">Washroom Issue</option>
+                <option value="Drinking Water">Drinking Water Problem</option>
+                <option value="Cleanliness">Cleanliness Issue</option>
+                <option value="WiFi/internet">WiFi / Internet Issue</option>
+                <option value="Computer Lab">Computer Lab Issue</option>
+                <option value="Website/Portal">Website / Portal Problem</option>
+                <option value="Fee">Fee Related Issue</option>
+                <option value="Scholarship">Scholarship Issue</option>
+                <option value="ID Card">ID Card Issue</option>
+                <option value="Library">Library Issue</option>
+                <option value="Ragging">Ragging Complaint</option>
+                <option value="Harassment">Harassment Complaint</option>
+                <option value="Security">Security Problem</option>
+                <option value="Misbehavior">Misbehavior</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label for="write-complaint">Write Your Complaint :</label><br>
+            <textarea id="write-complaint" name="complaint" required></textarea>
+            <br>
+            <br>
+            <label for="file">Attach File (Optional):</label>
+            <input type="file" id="file" name="attachment"><br><br>
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </main>
+    <footer>
+        &copy;2026 College Complaint And Management System. All Right Reserved.
+    </footer>
+
+    <!-- Complaint JavaScript -->
+    <script src="complaint.js"></script>
+    <!-- shared auth utilities (handles nav update/log out) -->
+    <script src="auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const complaintForm = document.getElementById('complaint-form');
+            if (complaintForm) {
+                complaintForm.addEventListener('submit', handleComplaintSubmit);
+            }
+            
+            // update navigation and show any auth status
+            updateNav();
+            checkAuthStatus();
+        });
+    </script>
+</body>
+</html>
